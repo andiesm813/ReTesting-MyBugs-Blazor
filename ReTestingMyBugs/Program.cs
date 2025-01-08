@@ -20,6 +20,19 @@ void RegisterIgniteUI(IServiceCollection services)
         typeof(IgbRippleModule),
         typeof(IgbNavDrawerModule),
         typeof(IgbButtonModule),
-        typeof(IgbDatePickerModule)
+        typeof(IgbButtonGroupModule),
+        typeof(IgbToggleButtonModule),
+        typeof(IgbChipModule),
+        typeof(IgbSwitchModule),
+        typeof(IgbTreeModule),
+        typeof(IgbBannerModule),
+        typeof(IgbCardModule),
+        typeof(IgbStepperModule),
+        typeof(IgbSliderModule),
+        typeof(IgbCalendarModule),
+        typeof(IgbInputModule),
+        typeof(IgbSelectModule),
+        typeof(IgbDatePickerModule),
+        typeof(IgbSnackbarModule)
     );
 }

@@ -5,7 +5,7 @@
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
-    gap: 24px;
+    gap: 16px;
     height: 100%;
 }
 .column-layout {
@@ -19,410 +19,153 @@
     gap: 16px;
     position: relative;
     padding: 32px;
-    width: 400px;
     min-width: 50px;
     min-height: 50px;
-    max-width: 400px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.group_1 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    position: relative;
+}
+.group_2 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.card {
+    width: 320px;
+    height: max-content;
+    min-width: 320px;
+    max-width: 320px;
+}
+.group_3 {
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 0.5rem;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.group_4 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    position: relative;
+    padding: 16px;
 }
 .button {
     --ig-size: var(--ig-size-medium);
     height: max-content;
 }
+.user-input {
+    height: max-content;
+    min-width: min-content;
+}
+.switch {
+    width: max-content;
+    height: max-content;
+}
+.button_1 {
+    --ig-size: var(--ig-size-medium);
+    height: max-content;
+    flex-shrink: 0;
+}
+.slider {
+    height: max-content;
+    min-width: 50px;
+}
 .date-picker {
     height: max-content;
     min-width: 120px;
 }
-.button_1::part(base) {
-    background-color: var(--ig-secondary-200);
-}
 .button_2::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_3::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_4::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_5::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_6::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_7::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_8::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_9::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_10::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_11::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_12::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_13::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_14::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_15::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_16::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_17::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_18::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_19::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_20::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_21::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_22::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_23::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_24::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_25::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_26::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_27::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_28::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_29::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_30::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_31::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_32::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_33::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_34::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_35::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_36::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_37::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_38::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_39::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_40::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_41::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_42::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_43::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_44::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_45::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_46::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_47::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_48::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_49::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_50::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_51::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_52::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_53::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_54::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_55::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_56::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_57::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_58::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_59::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_60::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_61::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_62::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_63::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_64::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_65::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_66::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_67::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_68::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_69::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_70::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_71::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_72::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_73::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_74::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_75::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_76::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_77::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_78::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_79::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_80::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_81::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_82::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_83::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_84::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_85::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_86::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_87::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_88::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_89::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_90::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_91::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_92::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_93::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_94::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_95::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_96::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_97::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_98::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_99::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_100::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_101::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_102::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_103::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_104::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_105::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_106::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_107::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_108::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_109::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_110::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_111::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_112::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_113::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_114::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_115::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_116::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_117::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_118::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_119::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_120::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_121::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_122::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_123::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_124::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_125::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_126::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_127::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_128::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_129::part(base) {
-    background-color: var(--ig-secondary-200);
-}
-.button_130::part(base) {
-    background-color: var(--ig-secondary-200);
+    color: var(--ig-surface-500);
+}
+.icon-button::part(base) {
+    color: var(--ig-surface-500);
+    background-color: var(--ig-secondary-500);
+}
+.media-content {
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+}
+.body-content {
+    min-width: 50px;
+    min-height: 50px;
+}
+.actions-content {
+    min-width: 50px;
+    min-height: 40px;
+}
+.stepper {
+    min-width: 0;
+    min-height: 0;
+}
+.step-content {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 10px;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.chip {
+    width: max-content;
+    height: max-content;
+}
+.icon {
+    --size: 18px;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+.icon_1 {
+    color: var(--ig-surface-500);
+}
+.icon_2 {
+    --size: 24px;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
 }
 .text {
     height: max-content;
     min-width: min-content;
+}
+.image {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.calendar {
+    width: max-content;
+    height: max-content;
+    min-width: max-content;
+}
+.tree {
+    min-width: max-content;
+    min-height: max-content;
+    flex-shrink: 0;
+}
+.notification {
+    height: max-content;
+    min-width: min-content;
+    flex-shrink: 0;
 }

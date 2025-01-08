@@ -3,111 +3,86 @@
 
 <div class="row-layout view-1-container">
     <div class="column-layout group">
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" @onclick="@(e => _dialog!.ToggleAsync())" class="button button_1" view_1-scope>
+        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _dialog!.ToggleAsync())" class="button button_2" view_1-scope>
             OPEN DIALOG
             <IgbRipple></IgbRipple>
         </IgbButton>
-        <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_2" view_1-scope>
-            Button
+        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" @onclick="@(e => _banner!.ToggleAsync())" class="button" view_1-scope>
+            SHOW BANNER
             <IgbRipple></IgbRipple>
         </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_3" view_1-scope>
-            Button
+        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" @onclick="@(e => _snackbar!.ToggleAsync())" class="button" view_1-scope>
+            SHOW SNACKBAR
             <IgbRipple></IgbRipple>
         </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_4" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_5" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_6" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_7" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_8" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_9" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_10" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_11" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_12" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_13" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_14" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_15" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_16" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_17" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_18" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_19" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_20" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_21" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_22" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_23" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_24" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_25" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_26" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
+        <IgbButtonGroup class="user-input" view_1-scope>
+            <IgbToggleButton>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbToggleButton>
+            <IgbToggleButton>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbToggleButton>
+            <IgbToggleButton>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbToggleButton>
+        </IgbButtonGroup>
+        <IgbChip class="chip" view_1-scope>
+            <span slot="prefix">
+                <span class="material-icons icon">
+                    place
+                </span>
+            </span>
+            Country
+        </IgbChip>
+        <IgbSwitch class="switch" view_1-scope>
+            Label
+        </IgbSwitch>
+        <IgbSwitch @bind-Checked="@_checked" class="switch" view_1-scope>
+            Label
+        </IgbSwitch>
+        <div class="row-layout group_1">
+            <IgbIconButton Variant="IconButtonVariant.Flat">
+                <span class="material-icons">
+                    email
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbIconButton>
+            <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" view_1-scope>
+                <span class="material-icons icon_1">
+                    email
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbIconButton>
+        </div>
+        <IgbTree class="tree" view_1-scope>
+            <IgbTreeItem Label="Design" Expanded="true">
+                <IgbTreeItem Label="Figma" Expanded="true"></IgbTreeItem>
+                <IgbTreeItem Label="Adobe XD" Expanded="true"></IgbTreeItem>
+                <IgbTreeItem Label="Sketch" Expanded="true"></IgbTreeItem>
+            </IgbTreeItem>
+            <IgbTreeItem Label="Development" Expanded="true">
+                <IgbTreeItem Label="Angular" Expanded="true"></IgbTreeItem>
+                <IgbTreeItem Label="Blazor" Expanded="true"></IgbTreeItem>
+                <IgbTreeItem Label="Web components" Expanded="true"></IgbTreeItem>
+            </IgbTreeItem>
+        </IgbTree>
+        <IgbBanner @ref="_banner" class="notification" view_1-scope>
+            <p>
+                Banner message
+            </p>
+            <igb-banner-actions>
+                <IgbButton Variant="ButtonVariant.Flat" DisplayType="ButtonBaseType.Button" class="button" view_1-scope>
+                    Button
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </igb-banner-actions>
+            <span class="material-icons icon_2">
+                mail
+            </span>
+        </IgbBanner>
     </div>
     <IgbDialog CloseOnOutsideClick="true" @ref="_dialog">
         <h5 slot="title">
@@ -127,436 +102,138 @@
             </IgbButton>
         </div>
     </IgbDialog>
-    <div class="column-layout group">
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_27" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_28" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_29" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_30" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_31" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_32" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_33" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_34" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_35" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_36" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_37" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_38" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_39" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_40" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_41" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_42" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_43" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_44" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_45" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_46" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_47" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_48" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_49" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_50" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_51" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_52" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
+    <div class="column-layout group_2">
+        <IgbCard class="card" view_1-scope>
+            <IgbCardMedia class="media-content" view_1-scope>
+                <img src="assets/design%20system.png" class="image" />
+            </IgbCardMedia>
+            <IgbCardHeader>
+                <h3 slot="title">
+                    Title goes here...
+                </h3>
+                <h5 slot="subtitle">
+                    Subtitle goes here...
+                </h5>
+            </IgbCardHeader>
+            <IgbCardContent class="body-content" view_1-scope>
+                <p class="typography__body-2 text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+                </p>
+            </IgbCardContent>
+            <IgbCardActions class="actions-content" view_1-scope>
+                <IgbButton Variant="ButtonVariant.Flat" DisplayType="ButtonBaseType.Button" slot="start" class="button" view_1-scope>
+                    Button
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+                    <span class="material-icons">
+                        favorite
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+                <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+                    <span class="material-icons">
+                        bookmark
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+                <IgbIconButton slot="end" Variant="IconButtonVariant.Flat">
+                    <span class="material-icons">
+                        share
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+            </IgbCardActions>
+        </IgbCard>
+    </div>
+    <div class="column-layout group_2">
+        <IgbStepper TitlePosition="StepperTitlePosition.Bottom" @ref="_stepper" class="stepper" view_1-scope>
+            <IgbStep Invalid="true">
+                <div class="column-layout step-content">
+                    <p class="typography__body-2 text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+                    </p>
+                    <div class="row-layout group_3">
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.NextAsync())" class="button_1" view_1-scope>
+                            Next
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                </div>
+                <p slot="title">Address</p>
+            </IgbStep>
+            <IgbStep Invalid="true">
+                <div class="column-layout step-content">
+                    <p class="typography__body-1 text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+                    </p>
+                    <div class="row-layout group_3">
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.PrevAsync())" class="button_1" view_1-scope>
+                            Prev
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.NextAsync())" class="button_1" view_1-scope>
+                            Next
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                </div>
+                <p slot="title">Item</p>
+            </IgbStep>
+            <IgbStep Optional="true">
+                <div class="column-layout step-content">
+                    <p class="typography__body-1 text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+                    </p>
+                    <div class="row-layout group_3">
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.PrevAsync())" class="button_1" view_1-scope>
+                            Prev
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.ResetAsync())" class="button_1" view_1-scope>
+                            Reset
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                </div>
+                <p slot="title">Wrap</p>
+                <p slot="subtitle">(Optional)</p>
+            </IgbStep>
+        </IgbStepper>
+        <div class="column-layout group_4">
+            <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
+            <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
+            <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
+            <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
+        </div>
     </div>
     <div class="column-layout group">
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_53" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
+        <IgbCalendar HideHeader="false" class="calendar" view_1-scope></IgbCalendar>
+        <IgbInput Label="Label" Outlined="true" class="user-input" view_1-scope></IgbInput>
+        <IgbInput Label="Label" Outlined="false" class="user-input" view_1-scope></IgbInput>
+        <IgbSelect Outlined="true" Label="First Select" class="user-input" view_1-scope>
+            <IgbSelectItem Value="Option">
+                Option
+            </IgbSelectItem>
+        </IgbSelect>
+        <IgbSelect Outlined="true" Label="Copied and Pasted 1s Select" class="user-input" view_1-scope>
+            <IgbSelectItem Value="Option">
+                Option
+            </IgbSelectItem>
+        </IgbSelect>
         <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_54" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_55" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_56" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_57" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_58" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_59" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_60" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_61" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_62" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_63" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_64" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_65" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_66" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_67" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_68" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_69" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_70" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_71" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_72" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_73" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_74" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_75" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_76" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_77" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_78" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-    </div>
-    <div class="column-layout group">
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_79" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
         <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_80" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_81" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_82" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_83" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_84" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_85" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_86" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_87" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_88" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_89" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_90" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_91" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_92" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_93" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_94" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_95" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_96" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_97" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_98" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_99" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_100" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_101" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_102" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_103" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_104" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
     </div>
-    <div class="column-layout group">
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_105" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_106" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_107" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_108" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_109" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_110" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_111" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_112" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_113" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_114" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_115" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_116" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_117" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_118" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_119" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_120" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_121" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_122" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_123" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_124" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_125" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_126" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_127" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_128" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_129" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" class="button button_130" view_1-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-    </div>
+    <IgbSnackbar ActionText="Action" Action="@(e => _snackbar!.ToggleAsync())" @ref="_snackbar" class="notification" view_1-scope>
+        This is a message
+    </IgbSnackbar>
 </div>
 
 @code {
     private IgbDialog _dialog;
+    private IgbBanner _banner;
+    private IgbSnackbar _snackbar;
+    private IgbStepper _stepper;
+    private bool _checked = true;
+    private double _value = 0;
 }
