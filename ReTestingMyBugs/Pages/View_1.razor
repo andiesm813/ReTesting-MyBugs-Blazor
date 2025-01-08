@@ -183,14 +183,14 @@
             <IgbTabPanel class="row-layout tab-item-content" view_1-scope></IgbTabPanel>
         </IgbTabs>
     </div>
-    <div class="column-layout group_2">
+    <div class="column-layout group_3">
         <IgbStepper TitlePosition="StepperTitlePosition.Bottom" @ref="_stepper" class="stepper" view_1-scope>
             <IgbStep Invalid="true">
                 <div class="column-layout step-content">
                     <p class="typography__body-2 text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
                     </p>
-                    <div class="row-layout group_3">
+                    <div class="row-layout group_4">
                         <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.NextAsync())" class="button_1" view_1-scope>
                             Next
                             <IgbRipple></IgbRipple>
@@ -204,7 +204,7 @@
                     <p class="typography__body-1 text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
                     </p>
-                    <div class="row-layout group_3">
+                    <div class="row-layout group_4">
                         <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.PrevAsync())" class="button_1" view_1-scope>
                             Prev
                             <IgbRipple></IgbRipple>
@@ -222,7 +222,7 @@
                     <p class="typography__body-1 text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
                     </p>
-                    <div class="row-layout group_3">
+                    <div class="row-layout group_4">
                         <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.PrevAsync())" class="button_1" view_1-scope>
                             Prev
                             <IgbRipple></IgbRipple>
@@ -237,15 +237,15 @@
                 <p slot="subtitle">(Optional)</p>
             </IgbStep>
         </IgbStepper>
-        <div class="column-layout group_4">
+        <div class="column-layout group_5">
             <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
             <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
             <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
             <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
         </div>
+        <IgbCalendar HideHeader="false" class="calendar" view_1-scope></IgbCalendar>
     </div>
     <div class="column-layout group">
-        <IgbCalendar HideHeader="false" class="calendar" view_1-scope></IgbCalendar>
         <IgbInput Label="Label" Outlined="true" class="user-input" view_1-scope></IgbInput>
         <IgbInput Label="Label" Outlined="false" class="user-input" view_1-scope></IgbInput>
         <IgbSelect Outlined="true" Label="First Select" class="user-input" view_1-scope>
@@ -260,6 +260,9 @@
         </IgbSelect>
         <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
         <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
+        <IgbTextarea Label="Label/ NoPlaceholder" Outlined="true" class="user-input" view_1-scope></IgbTextarea>
+        <IgbTextarea Placeholder="Placeholder / No Label" Outlined="true" class="user-input" view_1-scope></IgbTextarea>
+        <IgbTextarea Label="Label" Placeholder="Placeholder" Outlined="true" class="user-input" view_1-scope></IgbTextarea>
     </div>
     <IgbSnackbar ActionText="Action" Action="@(e => _snackbar!.ToggleAsync())" @ref="_snackbar" class="notification" view_1-scope>
         This is a message

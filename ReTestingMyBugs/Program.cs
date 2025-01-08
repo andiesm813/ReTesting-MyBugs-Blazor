@@ -34,6 +34,7 @@ void RegisterIgniteUI(IServiceCollection services)
         typeof(IgbInputModule),
         typeof(IgbSelectModule),
         typeof(IgbDatePickerModule),
+        typeof(IgbTextareaModule),
         typeof(IgbSnackbarModule)
     );
 }
