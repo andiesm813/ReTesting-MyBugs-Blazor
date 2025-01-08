@@ -15,7 +15,21 @@ namespace TestReTestingMyBugs
 			ctx.Services.AddIgniteUIBlazor(
 				typeof(IgbButtonModule),
 				typeof(IgbRippleModule),
-				typeof(IgbDatePickerModule));
+				typeof(IgbButtonGroupModule),
+				typeof(IgbToggleButtonModule),
+				typeof(IgbChipModule),
+				typeof(IgbSwitchModule),
+				typeof(IgbIconButtonModule),
+				typeof(IgbTreeModule),
+				typeof(IgbBannerModule),
+				typeof(IgbCardModule),
+				typeof(IgbStepperModule),
+				typeof(IgbSliderModule),
+				typeof(IgbCalendarModule),
+				typeof(IgbInputModule),
+				typeof(IgbSelectModule),
+				typeof(IgbDatePickerModule),
+				typeof(IgbSnackbarModule));
 			var componentUnderTest = ctx.RenderComponent<View_1>();
 			Assert.NotNull(componentUnderTest);
 		}
