@@ -27,6 +27,7 @@ void RegisterIgniteUI(IServiceCollection services)
         typeof(IgbTreeModule),
         typeof(IgbBannerModule),
         typeof(IgbCardModule),
+        typeof(IgbTabsModule),
         typeof(IgbStepperModule),
         typeof(IgbSliderModule),
         typeof(IgbCalendarModule),
