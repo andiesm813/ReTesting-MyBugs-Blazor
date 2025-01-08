@@ -3,8 +3,8 @@
 
 <div class="column-layout master-view-container">
     <IgbNavbar class="navbar" master_view-scope>
-        <IgbIconButton slot="start" Variant="IconButtonVariant.Flat" @onclick="@(e => _navDrawer!.ToggleAsync())">
-            <span class="material-icons">
+        <IgbIconButton slot="start" Variant="IconButtonVariant.Flat" @onclick="@(e => _navDrawer!.ToggleAsync())" class="icon-button" master_view-scope>
+            <span class="material-icons icon">
                 menu
             </span>
             <IgbRipple></IgbRipple>
@@ -34,10 +34,10 @@
         </IgbIconButton>
     </IgbNavbar>
     <div class="row-layout group_1">
-        <IgbNavDrawer Open="true" @ref="_navDrawer" class="nav-drawer" master_view-scope>
+        <IgbNavDrawer @ref="_navDrawer" class="nav-drawer" master_view-scope>
             <IgbNavDrawerItem @onclick="@(e => Navigate("/view_1"))">
                 <span slot="icon">
-                    <span class="material-icons icon">
+                    <span class="material-icons icon_1">
                         home
                     </span>
                     <IgbRipple></IgbRipple>
@@ -46,7 +46,7 @@
             </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("/view_2"))">
                 <span slot="icon">
-                    <span class="material-icons icon">
+                    <span class="material-icons icon_1">
                         dns
                     </span>
                     <IgbRipple></IgbRipple>
@@ -55,7 +55,7 @@
             </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("/view_3"))">
                 <span slot="icon">
-                    <span class="material-icons icon">
+                    <span class="material-icons icon_1">
                         dashboard
                     </span>
                     <IgbRipple></IgbRipple>

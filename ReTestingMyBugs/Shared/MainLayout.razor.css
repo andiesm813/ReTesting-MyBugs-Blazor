@@ -45,11 +45,18 @@
 .nav-drawer::part(main) {
     width: 200px;
 }
+.icon-button::part(base) {
+    color: var(--ig-info-500);
+    background-color: var(--ig-gray-500);
+}
+.icon {
+    color: var(--ig-info-500);
+}
 .h6 {
     margin: 0;
     flex-shrink: 0;
 }
-.icon {
+.icon_1 {
     --size: 24px;
     font-size: 24px;
     width: 24px;

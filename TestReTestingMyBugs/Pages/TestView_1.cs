@@ -14,7 +14,8 @@ namespace TestReTestingMyBugs
 			ctx.JSInterop.Mode = JSRuntimeMode.Loose;
 			ctx.Services.AddIgniteUIBlazor(
 				typeof(IgbButtonModule),
-				typeof(IgbRippleModule));
+				typeof(IgbRippleModule),
+				typeof(IgbDatePickerModule));
 			var componentUnderTest = ctx.RenderComponent<View_1>();
 			Assert.NotNull(componentUnderTest);
 		}
