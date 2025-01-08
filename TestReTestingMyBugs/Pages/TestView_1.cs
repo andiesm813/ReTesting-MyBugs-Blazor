@@ -30,6 +30,7 @@ namespace TestReTestingMyBugs
 				typeof(IgbInputModule),
 				typeof(IgbSelectModule),
 				typeof(IgbDatePickerModule),
+				typeof(IgbTextareaModule),
 				typeof(IgbSnackbarModule));
 			var componentUnderTest = ctx.RenderComponent<View_1>();
 			Assert.NotNull(componentUnderTest);
