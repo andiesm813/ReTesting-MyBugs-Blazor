@@ -246,13 +246,13 @@
 .calendar {
     height: max-content;
 }
-.avatar::part(base) {
+.avatar_3::part(base) {
     background-color: transparent;
 }
-.avatar_1::part(base) {
+.avatar_1_1::part(base) {
     background-color: transparent;
 }
-.avatar_2::part(base) {
+.avatar_2_1::part(base) {
     background-color: transparent;
 }
 .badge {
