@@ -3,19 +3,21 @@
 
 <div class="row-layout view-1-container">
     <div class="column-layout group">
-        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _dialog!.ToggleAsync())" class="button button_2" view_1-scope>
+        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _dialog!.ToggleAsync())" class="button button_3" view_1-scope>
             OPEN DIALOG
             <IgbRipple></IgbRipple>
         </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" @onclick="@(e => _banner!.ToggleAsync())" class="button" view_1-scope>
-            SHOW BANNER
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" @onclick="@(e => _snackbar!.ToggleAsync())" class="button" view_1-scope>
-            SHOW SNACKBAR
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButtonGroup class="user-input" view_1-scope>
+        <div class="row-layout group_1">
+            <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" @onclick="@(e => _banner!.ToggleAsync())" class="button_1" view_1-scope>
+                SHOW BANNER
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Outlined" DisplayType="ButtonBaseType.Button" @onclick="@(e => _snackbar!.ToggleAsync())" class="button_1" view_1-scope>
+                SHOW SNACKBAR
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+        <IgbButtonGroup class="user-input_2" view_1-scope>
             <IgbToggleButton>
                 Button
                 <IgbRipple></IgbRipple>
@@ -29,33 +31,101 @@
                 <IgbRipple></IgbRipple>
             </IgbToggleButton>
         </IgbButtonGroup>
-        <IgbChip class="chip" view_1-scope>
-            <span slot="prefix">
-                <span class="material-icons icon">
-                    place
-                </span>
-            </span>
-            Country
-        </IgbChip>
-        <IgbSwitch class="switch" view_1-scope>
-            Label
-        </IgbSwitch>
-        <IgbSwitch @bind-Checked="@_checked" class="switch" view_1-scope>
-            Label
-        </IgbSwitch>
         <div class="row-layout group_1">
-            <IgbIconButton Variant="IconButtonVariant.Flat">
+            <div class="column-layout group_2">
+                <IgbChip class="chip" view_1-scope>
+                    <span slot="prefix">
+                        <span class="material-icons icon">
+                            place
+                        </span>
+                    </span>
+                    Country
+                </IgbChip>
+                <IgbSwitch class="user-input" view_1-scope>
+                    Label
+                </IgbSwitch>
+                <IgbSwitch @bind-Checked="@_checked" class="user-input" view_1-scope>
+                    Label
+                </IgbSwitch>
+            </div>
+            <div class="column-layout group_3">
+                <IgbRadioGroup Value="@_value" Change="@(e => _value = e.Detail.Value)" class="user-input" view_1-scope>
+                    <IgbRadio Value="1" class="radio" view_1-scope>
+                        Label
+                    </IgbRadio>
+                    <IgbRadio Value="2" class="radio" view_1-scope>
+                        Label
+                    </IgbRadio>
+                    <IgbRadio Value="3" class="radio" view_1-scope>
+                        Label
+                    </IgbRadio>
+                </IgbRadioGroup>
+            </div>
+            <div class="row-layout group_1">
+                <IgbIconButton Variant="IconButtonVariant.Flat">
+                    <span class="material-icons">
+                        email
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" view_1-scope>
+                    <span class="material-icons icon_1">
+                        email
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+            </div>
+        </div>
+        <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" Value="@_value" Change="@(e => _value = e.Detail.Value)" class="user-input" view_1-scope>
+            <IgbRadio Value="1" class="radio" view_1-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="2" class="radio" view_1-scope>
+                Label
+            </IgbRadio>
+            <IgbRadio Value="3" class="radio" view_1-scope>
+                Label
+            </IgbRadio>
+        </IgbRadioGroup>
+        <div class="column-layout group_4">
+            <div class="row-layout group_5">
+                <IgbRating Label="Rating Component" Value="@_value1" Change="@(e => _value1 = e.Detail)" class="rating" view_1-scope></IgbRating>
+                <IgbRating Label="Rating Component" Value="@_value1" Change="@(e => _value1 = e.Detail)" class="rating_1" view_1-scope></IgbRating>
+            </div>
+            <IgbRating Label="Rating Component" Value="@_value1" Change="@(e => _value1 = e.Detail)" class="user-input" view_1-scope></IgbRating>
+        </div>
+        <div class="row-layout group_6">
+            <IgbBadge class="badge" view_1-scope>
+                Badge
+            </IgbBadge>
+            <IgbBadge class="badge" view_1-scope>
+                1
+            </IgbBadge>
+            <IgbBadge class="badge" view_1-scope>
+                10
+            </IgbBadge>
+            <IgbBadge class="badge" view_1-scope>
+                1000
+            </IgbBadge>
+            <IgbBadge class="badge" view_1-scope>
                 <span class="material-icons">
-                    email
+                    mail
                 </span>
-                <IgbRipple></IgbRipple>
-            </IgbIconButton>
-            <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" view_1-scope>
-                <span class="material-icons icon_1">
-                    email
-                </span>
-                <IgbRipple></IgbRipple>
-            </IgbIconButton>
+            </IgbBadge>
+        </div>
+        <div class="row-layout group_6">
+            <IgbAvatar Src="assets/Avatar3.png" Shape="AvatarShape.Circle" class="avatar" view_1-scope></IgbAvatar>
+            <IgbBadge class="badge" view_1-scope>
+                Badge
+            </IgbBadge>
+            <IgbAvatar Src="assets/Avatar3.png" Shape="AvatarShape.Circle" class="avatar_1" view_1-scope></IgbAvatar>
+            <IgbBadge class="badge" view_1-scope>
+                Badge
+            </IgbBadge>
+            <IgbAvatar Src="assets/Avatar3.png" Shape="AvatarShape.Circle" class="avatar_2" view_1-scope></IgbAvatar>
+            <IgbBadge class="badge" view_1-scope>
+                Badge
+            </IgbBadge>
         </div>
         <IgbTree class="tree" view_1-scope>
             <IgbTreeItem Label="Design" Expanded="true">
@@ -63,7 +133,7 @@
                 <IgbTreeItem Label="Adobe XD" Expanded="true"></IgbTreeItem>
                 <IgbTreeItem Label="Sketch" Expanded="true"></IgbTreeItem>
             </IgbTreeItem>
-            <IgbTreeItem Label="Development" Expanded="true">
+            <IgbTreeItem Label="Development">
                 <IgbTreeItem Label="Angular" Expanded="true"></IgbTreeItem>
                 <IgbTreeItem Label="Blazor" Expanded="true"></IgbTreeItem>
                 <IgbTreeItem Label="Web components" Expanded="true"></IgbTreeItem>
@@ -102,7 +172,7 @@
             </IgbButton>
         </div>
     </IgbDialog>
-    <div class="column-layout group_2">
+    <div class="column-layout group_7">
         <IgbCard class="card" view_1-scope>
             <IgbCardMedia class="media-content" view_1-scope>
                 <img src="assets/design%20system.png" class="image" />
@@ -183,15 +253,15 @@
             <IgbTabPanel class="row-layout tab-item-content" view_1-scope></IgbTabPanel>
         </IgbTabs>
     </div>
-    <div class="column-layout group_3">
+    <div class="column-layout group_8">
         <IgbStepper TitlePosition="StepperTitlePosition.Bottom" @ref="_stepper" class="stepper" view_1-scope>
             <IgbStep Invalid="true">
                 <div class="column-layout step-content">
                     <p class="typography__body-2 text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
                     </p>
-                    <div class="row-layout group_4">
-                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.NextAsync())" class="button_1" view_1-scope>
+                    <div class="row-layout group_9">
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.NextAsync())" class="button_2" view_1-scope>
                             Next
                             <IgbRipple></IgbRipple>
                         </IgbButton>
@@ -201,68 +271,70 @@
             </IgbStep>
             <IgbStep Invalid="true">
                 <div class="column-layout step-content">
-                    <p class="typography__body-1 text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
-                    </p>
-                    <div class="row-layout group_4">
-                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.PrevAsync())" class="button_1" view_1-scope>
+                    <IgbInput Label="Label" Outlined="true" class="user-input_2" view_1-scope></IgbInput>
+                    <IgbSelect Outlined="true" Label="First Select" class="user-input_2" view_1-scope>
+                        <IgbSelectItem Value="Option">
+                            Option
+                        </IgbSelectItem>
+                    </IgbSelect>
+                    <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
+                    <IgbTextarea Label="Label/ NoPlaceholder" Outlined="true" class="user-input_2" view_1-scope></IgbTextarea>
+                    <div class="row-layout group_9">
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.PrevAsync())" class="button_2" view_1-scope>
                             Prev
                             <IgbRipple></IgbRipple>
                         </IgbButton>
-                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.NextAsync())" class="button_1" view_1-scope>
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.NextAsync())" class="button_2" view_1-scope>
                             Next
                             <IgbRipple></IgbRipple>
                         </IgbButton>
                     </div>
                 </div>
-                <p slot="title">Item</p>
+                <p slot="title">Inputs Cropped</p>
             </IgbStep>
             <IgbStep Optional="true">
                 <div class="column-layout step-content">
-                    <p class="typography__body-1 text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
-                    </p>
-                    <div class="row-layout group_4">
-                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.PrevAsync())" class="button_1" view_1-scope>
+                    <div class="column-layout group_10">
+                        <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value2" Change="@(e => _value2 = e.Detail)" class="slider" view_1-scope></IgbSlider>
+                        <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value2" Change="@(e => _value2 = e.Detail)" class="slider" view_1-scope></IgbSlider>
+                        <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value2" Change="@(e => _value2 = e.Detail)" class="slider" view_1-scope></IgbSlider>
+                        <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value2" Change="@(e => _value2 = e.Detail)" class="slider" view_1-scope></IgbSlider>
+                    </div>
+                    <div class="row-layout group_9">
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.PrevAsync())" class="button_2" view_1-scope>
                             Prev
                             <IgbRipple></IgbRipple>
                         </IgbButton>
-                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.ResetAsync())" class="button_1" view_1-scope>
+                        <IgbButton DisplayType="ButtonBaseType.Button" @onclick="@(e => _stepper!.ResetAsync())" class="button_2" view_1-scope>
                             Reset
                             <IgbRipple></IgbRipple>
                         </IgbButton>
                     </div>
                 </div>
-                <p slot="title">Wrap</p>
+                <p slot="title">Sliders</p>
                 <p slot="subtitle">(Optional)</p>
             </IgbStep>
         </IgbStepper>
-        <div class="column-layout group_5">
-            <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
-            <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
-            <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
-            <IgbSlider Min="0" Max="100" Step="10" DiscreteTrack="true" Value="@_value" Change="@(e => _value = e.Detail)" class="slider" view_1-scope></IgbSlider>
-        </div>
         <IgbCalendar HideHeader="false" class="calendar" view_1-scope></IgbCalendar>
     </div>
-    <div class="column-layout group">
-        <IgbInput Label="Label" Outlined="true" class="user-input" view_1-scope></IgbInput>
-        <IgbInput Label="Label" Outlined="false" class="user-input" view_1-scope></IgbInput>
-        <IgbSelect Outlined="true" Label="First Select" class="user-input" view_1-scope>
+    <div class="column-layout group_7">
+        <IgbInput Label="Label" Outlined="true" class="user-input_2" view_1-scope></IgbInput>
+        <IgbInput Label="Label" Outlined="false" class="user-input_2" view_1-scope></IgbInput>
+        <IgbSelect Outlined="true" Label="First Select" class="user-input_2" view_1-scope>
             <IgbSelectItem Value="Option">
                 Option
             </IgbSelectItem>
         </IgbSelect>
-        <IgbSelect Outlined="true" Label="Copied and Pasted 1s Select" class="user-input" view_1-scope>
+        <IgbSelect Outlined="true" Label="Copied and Pasted 1s Select" class="user-input_2" view_1-scope>
             <IgbSelectItem Value="Option">
                 Option
             </IgbSelectItem>
         </IgbSelect>
         <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
         <IgbDatePicker Label="Date" Outlined="true" Mode="DatePickerMode.Dialog" class="date-picker" view_1-scope></IgbDatePicker>
-        <IgbTextarea Label="Label/ NoPlaceholder" Outlined="true" class="user-input" view_1-scope></IgbTextarea>
-        <IgbTextarea Placeholder="Placeholder / No Label" Outlined="true" class="user-input" view_1-scope></IgbTextarea>
-        <IgbTextarea Label="Label" Placeholder="Placeholder" Outlined="true" class="user-input" view_1-scope></IgbTextarea>
+        <IgbTextarea Label="Label/ NoPlaceholder" Outlined="true" class="user-input_2" view_1-scope></IgbTextarea>
+        <IgbTextarea Placeholder="Placeholder / No Label" Outlined="true" class="user-input_2" view_1-scope></IgbTextarea>
+        <IgbTextarea Label="Label" Placeholder="Placeholder" Outlined="true" class="user-input_2" view_1-scope></IgbTextarea>
     </div>
     <IgbSnackbar ActionText="Action" Action="@(e => _snackbar!.ToggleAsync())" @ref="_snackbar" class="notification" view_1-scope>
         This is a message
@@ -275,5 +347,7 @@
     private IgbSnackbar _snackbar;
     private IgbStepper _stepper;
     private bool _checked = true;
-    private double _value = 0;
+    private string _value = "1";
+    private double _value1 = 4;
+    private double _value2 = 0;
 }
