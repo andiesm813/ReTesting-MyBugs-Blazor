@@ -16,7 +16,8 @@ namespace TestReTestingMyBugs
 				typeof(IgbNavbarModule),
 				typeof(IgbIconButtonModule),
 				typeof(IgbRippleModule),
-				typeof(IgbNavDrawerModule));
+				typeof(IgbNavDrawerModule),
+				typeof(IgbNavDrawerItemModule));
 			var componentUnderTest = ctx.RenderComponent<MainLayout>();
 			Assert.NotNull(componentUnderTest);
 		}
